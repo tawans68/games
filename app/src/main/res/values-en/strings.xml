@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Word Pop</string>
+    <string name="default_letters">EA</string>
+    <string name="input_hint">Type a word</string>
+    <string name="btn_check">Check</string>
+    <string name="btn_new">Restart</string>
+    <string name="btn_start">Classic Mode</string>
+    <string name="btn_relax">Relax Mode</string>
+    <string name="btn_survival">Survival Mode</string>
+    <string name="latest_score">Latest Score: %d</string>
+    <string name="high_score">High Score: %d</string>
+    <string name="relax_mode_active">Relax Mode: Keep typing!</string>
+    <string name="survival_mode_active">Lives: %s | Time: %d</string>
+    <string name="welcome_title">Word Pop</string>
+    <string name="tv_timer">Time: %d</string>
+    <string name="tv_score">Score: %d</string>
+    <string name="game_over">💥 Game Over!</string>
+    <string name="correct">✅ Correct!</string>
+    <string name="must_contain">❌ Must contain %s</string>
+    <string name="already_used">⚠️ Word already used!</string>
+    <string name="no_dictionary">❌ Not in dictionary</string>
+    <string name="load_success">Dictionary ready! (%d words)</string>
+    <string name="load_error">Error: %s</string>
+    <string name="loading">Loading dictionary...</string>
+    <string name="survival_wrong">Wrong! Lost a life (-1 ❤️)</string>
+    <string name="survival_timeout">Timeout! Lost a life (-1 ❤️)</string>
+    <string name="survival_game_over">Out of lives! Game Over</string>
+    <string name="survival_heart_bonus">Awesome! 10 correct in a row. Extra life +1 ❤️</string>
+
+    <string name="desc_classic_title">Classic Mode</string>
+    <string name="desc_classic_body">Enter a word containing the given letters within 15 seconds. Try to get the highest score!</string>
+
+    <string name="desc_relax_title">Relax Mode</string>
+    <string name="desc_relax_body">No time limit. Practice finding words at your own pace.</string>
+
+    <string name="desc_survival_title">Survival Mode</string>
+    <string name="desc_survival_body">You have 3 hearts ❤️. Losing time or getting it wrong costs a heart. Get 10 correct in a row to earn a heart back!</string>
+
+    <string name="btn_confirm_start">Start Game!</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_back_to_home">Back to Home</string>
+    <string name="language_toggle">TH | EN</string>
+    <string name="new_high_score">🎉 New High Score!</string>
+</resources>

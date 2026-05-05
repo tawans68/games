@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Word Pop</string>
+    <string name="default_letters">EA</string>
+    <string name="input_hint">พิมพ์คำ</string>
+    <string name="btn_check">ตรวจคำ</string>
+    <string name="btn_new">เริ่มใหม่</string>
+    <string name="btn_start">โหมดคลาสสิก</string>
+    <string name="btn_relax">โหมดผ่อนคลาย</string>
+    <string name="btn_survival">โหมดเอาชีวิตรอด</string>
+    <string name="latest_score">คะแนนล่าสุด: %d</string>
+    <string name="high_score">คะแนนสูงสุด: %d</string>
+    <string name="relax_mode_active">โหมดผ่อนคลาย: พิมพ์ไปเรื่อยๆ!</string>
+    <string name="survival_mode_active">ชีวิต: %s | เวลา: %d</string>
+    <string name="welcome_title">Word Pop</string>
+    <string name="tv_timer">เวลา: %d</string>
+    <string name="tv_score">คะแนน: %d</string>
+    <string name="game_over">💥 เกมจบ!</string>
+    <string name="correct">✅ ถูก!</string>
+    <string name="must_contain">❌ ต้องมี %s</string>
+    <string name="already_used">⚠️ คำนี้ใช้ไปแล้ว!</string>
+    <string name="no_dictionary">❌ ไม่มีคำนี้ในพจนานุกรม</string>
+    <string name="load_success">พจนานุกรมพร้อมแล้ว! (%d คำ)</string>
+    <string name="load_error">ข้อผิดพลาด: %s</string>
+    <string name="loading">กำลังโหลดพจนานุกรม…</string>
+    <string name="survival_wrong">ผิด! เสียหัวใจ (-1 ❤️)</string>
+    <string name="survival_timeout">หมดเวลา! เสียหัวใจ (-1 ❤️)</string>
+    <string name="survival_game_over">หัวใจหมดแล้ว! เกมจบ</string>
+    <string name="survival_heart_bonus">สุดยอด! ถูก 10 คำรวด ได้รับหัวใจ +1 ❤️</string>
+
+    <string name="desc_classic_title">โหมดคลาสสิก</string>
+    <string name="desc_classic_body">ตอบคำศัพท์ที่มีตัวอักษรที่กำหนดให้ทันภายใน 15 วินาทีต่อรอบ พยายามทำคะแนนให้สูงที่สุด!</string>
+
+    <string name="desc_relax_title">โหมดผ่อนคลาย</string>
+    <string name="desc_relax_body">ไม่มีการจำกัดเวลา ฝึกฝนการนึกคำศัพท์ไปเรื่อยๆ ตามจังหวะของคุณเอง</string>
+
+    <string name="desc_survival_title">โหมดเอาชีวิตรอด</string>
+    <string name="desc_survival_body">คุณมี 3 หัวใจ ❤️ หากตอบผิดหรือหมดเวลาจะเสียหัวใจ ตอบถูกติดต่อกัน 10 คำเพื่อรับหัวใจคืน!</string>
+
+    <string name="btn_confirm_start">เริ่มเกมเลย!</string>
+    <string name="btn_cancel">ยกเลิก</string>
+    <string name="btn_back_to_home">กลับหน้าหลัก</string>
+    <string name="language_toggle">EN | TH</string>
+    <string name="new_high_score">🎉 สถิติใหม่!</string>
+</resources>
