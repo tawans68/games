@@ -57,7 +57,7 @@ public class DictionaryManager {
     public String getRandomPrompt() {
         if (!isLoaded || wordList.isEmpty()) return "TH";
         
-        // สุ่มหยิบคำที่มีความยาวอย่างน้อย 3 ตัวอักษร เพื่อให้ตัดออกมาได้ 2 ตัวแน่นอน
+        
         String randomWord = "";
         int attempts = 0;
         while (randomWord.length() < 3 && attempts < 100) {
@@ -67,7 +67,7 @@ public class DictionaryManager {
         
         if (randomWord.length() < 2) return "TH"; // Fallback
 
-        // สุ่มตัดเอาตัวอักษรมา "2 ตัว" เท่านั้น
+    
         int len = 2;
         int start = random.nextInt(randomWord.length() - len + 1);
         return randomWord.substring(start, start + len);
