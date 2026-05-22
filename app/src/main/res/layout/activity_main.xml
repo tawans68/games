@@ -50,30 +50,21 @@
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
         <Button
-            android:id="@+id/btnStart"
+            android:id="@+id/btnComputerTerms"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="@string/btn_start"
+            android:text="@string/btn_computer_terms"
             android:textSize="18sp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#4CAF50"/>
+            android:backgroundTint="#673AB7"/>
 
         <Button
-            android:id="@+id/btnRelax"
+            android:id="@+id/btnPractice"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:text="@string/btn_relax"
+            android:text="@string/btn_practice"
             android:textSize="18sp"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="#FF9800"/>
-
-        <Button
-            android:id="@+id/btnSurvival"
-            android:layout_width="250dp"
-            android:layout_height="60dp"
-            android:text="@string/btn_survival"
-            android:textSize="18sp"
-            android:backgroundTint="#E91E63"/>
+            android:backgroundTint="#009688"/>
 
         <TextView
             android:id="@+id/tvLoadStatus"
@@ -82,6 +73,47 @@
             android:text="กำลังโหลด..."
             android:layout_marginTop="20dp"
             android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Category Selection Screen -->
+    <LinearLayout
+        android:id="@+id/categoryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_category_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/categoryList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <!-- Buttons will be added here dynamically -->
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnBackFromCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9E9E9E"/>
     </LinearLayout>
 
     <!-- Mode Description Screen -->
@@ -218,6 +250,15 @@
                 android:text="@string/btn_back_to_home"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#9E9E9E"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnRestart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_new"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#4CAF50"
                 android:visibility="gone"/>
 
             <RelativeLayout

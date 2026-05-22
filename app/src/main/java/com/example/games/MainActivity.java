@@ -40,10 +40,32 @@ public class MainActivity extends AppCompatActivity {
 
     private void initUI() {
         uiManager.btnCheck.setOnClickListener(v -> handleCheck());
-        uiManager.btnStart.setOnClickListener(v -> showDescription(GameMode.CLASSIC));
-        uiManager.btnRelax.setOnClickListener(v -> showDescription(GameMode.RELAX));
-        uiManager.btnSurvival.setOnClickListener(v -> showDescription(GameMode.SURVIVAL));
+
+        uiManager.btnComputerTerms.setOnClickListener(v -> {
+            selectedMode = GameMode.CLASSIC;
+            setupCategoryButtons();
+            uiManager.showCategorySelection();
+        });
+
+        uiManager.btnPractice.setOnClickListener(v -> {
+            selectedMode = GameMode.RELAX;
+            setupCategoryButtons();
+            uiManager.showCategorySelection();
+        });
+
+        uiManager.btnBackFromCategory.setOnClickListener(v -> uiManager.showHomeScreen(scoreManager.getLatestScore(), scoreManager.getHighScore()));
+
         uiManager.btnBackToHome.setOnClickListener(v -> uiManager.showHomeScreen(scoreManager.getLatestScore(), scoreManager.getHighScore()));
+        
+        uiManager.btnRestart.setOnClickListener(v -> {
+            uiManager.btnRestart.setVisibility(View.GONE);
+            uiManager.btnBackToHome.setVisibility(View.GONE);
+            startNewGame(selectedMode);
+            uiManager.setGameControlsEnabled(true);
+            uiManager.etInput.requestFocus();
+            uiManager.showKeyboard();
+        });
+
         uiManager.btnClose.setOnClickListener(v -> quitGame());
         uiManager.btnConfirmStart.setOnClickListener(v -> showGameScreen());
         uiManager.btnCancelDesc.setOnClickListener(v -> uiManager.showHomeScreen(scoreManager.getLatestScore(), scoreManager.getHighScore()));
@@ -62,41 +84,63 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void setupCategoryButtons() {
+        uiManager.categoryList.removeAllViews();
+        for (String category : dictionaryManager.getCategoryNames()) {
+            android.widget.Button btn = new android.widget.Button(this);
+            android.widget.LinearLayout.LayoutParams params = new android.widget.LinearLayout.LayoutParams(
+                    android.widget.LinearLayout.LayoutParams.MATCH_PARENT,
+                    (int) (60 * getResources().getDisplayMetrics().density));
+            params.setMargins(0, 0, 0, (int) (10 * getResources().getDisplayMetrics().density));
+            btn.setLayoutParams(params);
+            btn.setText(category);
+            btn.setBackgroundTintList(android.content.res.ColorStateList.valueOf(0xFF673AB7));
+            btn.setTextColor(0xFFFFFFFF);
+            btn.setOnClickListener(v -> {
+                dictionaryManager.setSelectedCategory(category);
+                showDescription(selectedMode, category);
+            });
+            uiManager.categoryList.addView(btn);
+        }
+    }
+
     private void initGame() {
         dictionaryManager = new DictionaryManager();
         gameEngine = new GameEngine();
 
-        uiManager.btnStart.setEnabled(false);
-        uiManager.btnRelax.setEnabled(false);
-        uiManager.btnSurvival.setEnabled(false);
+        uiManager.btnComputerTerms.setEnabled(false);
+        uiManager.btnPractice.setEnabled(false);
         uiManager.tvLoadStatus.setText(R.string.loading);
 
         dictionaryManager.loadAsync(this, new DictionaryManager.LoadCallback() {
             @Override
             public void onLoaded(int size) {
-                uiManager.btnStart.setEnabled(true);
-                uiManager.btnRelax.setEnabled(true);
-                uiManager.btnSurvival.setEnabled(true);
-                uiManager.tvLoadStatus.setText(getString(R.string.load_success, size));
+                uiManager.btnComputerTerms.setEnabled(true);
+                uiManager.btnPractice.setEnabled(true);
+                uiManager.tvLoadStatus.setText(getString(R.string.load_success, dictionaryManager.getSize()));
             }
 
             @Override
             public void onError(String message) {
                 uiManager.tvLoadStatus.setText(getString(R.string.load_error, message));
-                uiManager.btnStart.setEnabled(true);
-                uiManager.btnRelax.setEnabled(true);
-                uiManager.btnSurvival.setEnabled(true);
+                uiManager.btnComputerTerms.setEnabled(true);
+                uiManager.btnPractice.setEnabled(true);
             }
         });
     }
 
-    private void showDescription(GameMode mode) {
+    private String selectedCategoryName = null;
+
+    private void showDescription(GameMode mode, String categoryName) {
         this.selectedMode = mode;
-        uiManager.showDescription(mode);
+        this.selectedCategoryName = categoryName;
+        uiManager.showDescription(mode, categoryName);
     }
 
     private void showGameScreen() {
         uiManager.showGameScreen();
+        uiManager.btnRestart.setVisibility(View.GONE);
+        uiManager.btnBackToHome.setVisibility(View.GONE);
         startNewGame(selectedMode);
     }
 
@@ -184,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startTimer() {
         if (timer != null) timer.cancel();
-        timer = new CountDownTimer(15000, 100) {
+        timer = new CountDownTimer(20000, 100) {
             public void onTick(long millisUntilFinished) {
                 int seconds = (int) (millisUntilFinished / 1000);
                 if (gameEngine.getCurrentMode() == GameMode.SURVIVAL) {
@@ -222,6 +266,7 @@ public class MainActivity extends AppCompatActivity {
         uiManager.setResult(message, 0xFFF44336);
         uiManager.setGameControlsEnabled(false);
         uiManager.btnBackToHome.setVisibility(View.VISIBLE);
+        uiManager.btnRestart.setVisibility(View.VISIBLE);
         
         saveAndNotifyScore();
         uiManager.hideKeyboard();

@@ -1,0 +1,1217 @@
+========== PROGRAMMING ==========
+algorithm
+algorithm system
+algorithm module
+array
+array system
+array module
+assignment
+assignment system
+assignment module
+argument
+argument system
+argument module
+boolean
+boolean system
+boolean module
+bug
+bug system
+bug module
+callback
+callback system
+callback module
+class
+class system
+class module
+closure
+closure system
+closure module
+compiler
+compiler system
+compiler module
+constant
+constant system
+constant module
+constructor
+constructor system
+constructor module
+debugging
+debugging system
+debugging module
+declaration
+declaration system
+declaration module
+expression
+expression system
+expression module
+framework
+framework system
+framework module
+function
+function system
+function module
+generator
+generator system
+generator module
+identifier
+identifier system
+identifier module
+inheritance
+inheritance system
+inheritance module
+instance
+instance system
+instance module
+interface
+interface system
+interface module
+iteration
+iteration system
+iteration module
+lambda
+lambda system
+lambda module
+library
+library system
+library module
+loop
+loop system
+loop module
+method
+method system
+method module
+module
+module system
+module module
+namespace
+namespace system
+namespace module
+object
+object system
+object module
+operator
+operator system
+operator module
+parameter
+parameter system
+parameter module
+pointer
+pointer system
+pointer module
+polymorphism
+polymorphism system
+polymorphism module
+procedure
+procedure system
+procedure module
+program
+program system
+program module
+property
+property system
+property module
+prototype
+prototype system
+prototype module
+pseudocode
+pseudocode system
+pseudocode module
+recursion
+recursion system
+recursion module
+runtime
+runtime system
+runtime module
+scope
+scope system
+scope module
+script
+script system
+script module
+software
+software system
+software module
+statement
+statement system
+statement module
+string
+string system
+string module
+syntax
+syntax system
+syntax module
+thread
+thread system
+thread module
+token
+token system
+token module
+type
+type system
+type module
+variable
+variable system
+variable module
+vector
+vector system
+vector module
+
+========== DATA STRUCTURE ==========
+array
+array system
+array module
+binary tree
+binary tree system
+binary tree module
+binary search tree
+binary search tree system
+binary search tree module
+deque
+deque system
+deque module
+graph
+graph system
+graph module
+hash map
+hash map system
+hash map module
+hash table
+hash table system
+hash table module
+heap
+heap system
+heap module
+linked list
+linked list system
+linked list module
+matrix
+matrix system
+matrix module
+node
+node system
+node module
+priority queue
+priority queue system
+priority queue module
+queue
+queue system
+queue module
+set
+set system
+set module
+stack
+stack system
+stack module
+tree
+tree system
+tree module
+trie
+trie system
+trie module
+tuple
+tuple system
+tuple module
+vector
+vector system
+vector module
+adjacency list
+adjacency list system
+adjacency list module
+adjacency matrix
+adjacency matrix system
+adjacency matrix module
+circular queue
+circular queue system
+circular queue module
+doubly linked list
+doubly linked list system
+doubly linked list module
+dynamic array
+dynamic array system
+dynamic array module
+edge
+edge system
+edge module
+forest
+forest system
+forest module
+min heap
+min heap system
+min heap module
+max heap
+max heap system
+max heap module
+
+========== ALGORITHMS ==========
+binary search
+binary search system
+binary search module
+breadth first search
+breadth first search system
+breadth first search module
+depth first search
+depth first search system
+depth first search module
+bubble sort
+bubble sort system
+bubble sort module
+quick sort
+quick sort system
+quick sort module
+merge sort
+merge sort system
+merge sort module
+selection sort
+selection sort system
+selection sort module
+insertion sort
+insertion sort system
+insertion sort module
+dynamic programming
+dynamic programming system
+dynamic programming module
+greedy algorithm
+greedy algorithm system
+greedy algorithm module
+backtracking
+backtracking system
+backtracking module
+divide and conquer
+divide and conquer system
+divide and conquer module
+hashing
+hashing system
+hashing module
+memoization
+memoization system
+memoization module
+pathfinding
+pathfinding system
+pathfinding module
+recursion
+recursion system
+recursion module
+search
+search system
+search module
+sorting
+sorting system
+sorting module
+traversal
+traversal system
+traversal module
+optimization
+optimization system
+optimization module
+Dijkstra
+Dijkstra system
+Dijkstra module
+Bellman Ford
+Bellman Ford system
+Bellman Ford module
+Kruskal
+Kruskal system
+Kruskal module
+Prim
+Prim system
+Prim module
+A star
+A star system
+A star module
+topological sort
+topological sort system
+topological sort module
+
+========== OOP ==========
+abstraction
+abstraction system
+abstraction module
+association
+association system
+association module
+base class
+base class system
+base class module
+child class
+child class system
+child class module
+class
+class system
+class module
+composition
+composition system
+composition module
+constructor
+constructor system
+constructor module
+delegation
+delegation system
+delegation module
+encapsulation
+encapsulation system
+encapsulation module
+inheritance
+inheritance system
+inheritance module
+instance
+instance system
+instance module
+interface
+interface system
+interface module
+method
+method system
+method module
+object
+object system
+object module
+overload
+overload system
+overload module
+override
+override system
+override module
+parent class
+parent class system
+parent class module
+polymorphism
+polymorphism system
+polymorphism module
+private
+private system
+private module
+protected
+protected system
+protected module
+public
+public system
+public module
+superclass
+superclass system
+superclass module
+subclass
+subclass system
+subclass module
+virtual function
+virtual function system
+virtual function module
+
+========== DATABASE ==========
+aggregation
+aggregation system
+aggregation module
+attribute
+attribute system
+attribute module
+column
+column system
+column module
+constraint
+constraint system
+constraint module
+cursor
+cursor system
+cursor module
+database
+database system
+database module
+entity
+entity system
+entity module
+foreign key
+foreign key system
+foreign key module
+index
+index system
+index module
+join
+join system
+join module
+migration
+migration system
+migration module
+NoSQL
+NoSQL system
+NoSQL module
+normalization
+normalization system
+normalization module
+primary key
+primary key system
+primary key module
+query
+query system
+query module
+record
+record system
+record module
+relational database
+relational database system
+relational database module
+row
+row system
+row module
+schema
+schema system
+schema module
+SQL
+SQL system
+SQL module
+stored procedure
+stored procedure system
+stored procedure module
+table
+table system
+table module
+transaction
+transaction system
+transaction module
+trigger
+trigger system
+trigger module
+tuple
+tuple system
+tuple module
+view
+view system
+view module
+MongoDB
+MongoDB system
+MongoDB module
+MySQL
+MySQL system
+MySQL module
+PostgreSQL
+PostgreSQL system
+PostgreSQL module
+
+========== NETWORKING ==========
+address
+address system
+address module
+bandwidth
+bandwidth system
+bandwidth module
+browser
+browser system
+browser module
+client
+client system
+client module
+cloud
+cloud system
+cloud module
+connection
+connection system
+connection module
+domain
+domain system
+domain module
+download
+download system
+download module
+ethernet
+ethernet system
+ethernet module
+firewall
+firewall system
+firewall module
+gateway
+gateway system
+gateway module
+host
+host system
+host module
+HTTP
+HTTP system
+HTTP module
+HTTPS
+HTTPS system
+HTTPS module
+IP address
+IP address system
+IP address module
+LAN
+LAN system
+LAN module
+MAC address
+MAC address system
+MAC address module
+network
+network system
+network module
+packet
+packet system
+packet module
+ping
+ping system
+ping module
+port
+port system
+port module
+protocol
+protocol system
+protocol module
+proxy
+proxy system
+proxy module
+request
+request system
+request module
+response
+response system
+response module
+router
+router system
+router module
+server
+server system
+server module
+socket
+socket system
+socket module
+subnet
+subnet system
+subnet module
+switch
+switch system
+switch module
+TCP
+TCP system
+TCP module
+UDP
+UDP system
+UDP module
+URL
+URL system
+URL module
+VPN
+VPN system
+VPN module
+WAN
+WAN system
+WAN module
+web server
+web server system
+web server module
+WiFi
+WiFi system
+WiFi module
+
+========== OPERATING SYSTEM ==========
+bootloader
+bootloader system
+bootloader module
+cache
+cache system
+cache module
+command line
+command line system
+command line module
+concurrency
+concurrency system
+concurrency module
+core
+core system
+core module
+CPU
+CPU system
+CPU module
+deadlock
+deadlock system
+deadlock module
+device driver
+device driver system
+device driver module
+file system
+file system system
+file system module
+firmware
+firmware system
+firmware module
+interrupt
+interrupt system
+interrupt module
+kernel
+kernel system
+kernel module
+memory
+memory system
+memory module
+multitasking
+multitasking system
+multitasking module
+paging
+paging system
+paging module
+process
+process system
+process module
+process scheduler
+process scheduler system
+process scheduler module
+RAM
+RAM system
+RAM module
+register
+register system
+register module
+resource
+resource system
+resource module
+shell
+shell system
+shell module
+swap
+swap system
+swap module
+system call
+system call system
+system call module
+task manager
+task manager system
+task manager module
+thread
+thread system
+thread module
+virtual memory
+virtual memory system
+virtual memory module
+
+========== WEB DEVELOPMENT ==========
+AJAX
+AJAX system
+AJAX module
+API
+API system
+API module
+backend
+backend system
+backend module
+bootstrap
+bootstrap system
+bootstrap module
+browser
+browser system
+browser module
+CSS
+CSS system
+CSS module
+database
+database system
+database module
+DOM
+DOM system
+DOM module
+endpoint
+endpoint system
+endpoint module
+Flask
+Flask system
+Flask module
+frontend
+frontend system
+frontend module
+full stack
+full stack system
+full stack module
+HTML
+HTML system
+HTML module
+JavaScript
+JavaScript system
+JavaScript module
+JSON
+JSON system
+JSON module
+middleware
+middleware system
+middleware module
+NodeJS
+NodeJS system
+NodeJS module
+PHP
+PHP system
+PHP module
+React
+React system
+React module
+responsive design
+responsive design system
+responsive design module
+REST
+REST system
+REST module
+routing
+routing system
+routing module
+session
+session system
+session module
+Tailwind
+Tailwind system
+Tailwind module
+template
+template system
+template module
+TypeScript
+TypeScript system
+TypeScript module
+UI
+UI system
+UI module
+UX
+UX system
+UX module
+Vue
+Vue system
+Vue module
+web application
+web application system
+web application module
+XML
+XML system
+XML module
+
+========== ARTIFICIAL INTELLIGENCE ==========
+artificial intelligence
+artificial intelligence system
+artificial intelligence module
+classification
+classification system
+classification module
+computer vision
+computer vision system
+computer vision module
+data mining
+data mining system
+data mining module
+dataset
+dataset system
+dataset module
+deep learning
+deep learning system
+deep learning module
+feature extraction
+feature extraction system
+feature extraction module
+GPT
+GPT system
+GPT module
+inference
+inference system
+inference module
+language model
+language model system
+language model module
+machine learning
+machine learning system
+machine learning module
+model
+model system
+model module
+natural language processing
+natural language processing system
+natural language processing module
+neural network
+neural network system
+neural network module
+prediction
+prediction system
+prediction module
+reinforcement learning
+reinforcement learning system
+reinforcement learning module
+supervised learning
+supervised learning system
+supervised learning module
+tokenization
+tokenization system
+tokenization module
+training
+training system
+training module
+unsupervised learning
+unsupervised learning system
+unsupervised learning module
+
+========== CYBER SECURITY ==========
+antivirus
+antivirus system
+antivirus module
+authentication
+authentication system
+authentication module
+authorization
+authorization system
+authorization module
+botnet
+botnet system
+botnet module
+cipher
+cipher system
+cipher module
+cyber attack
+cyber attack system
+cyber attack module
+decryption
+decryption system
+decryption module
+encryption
+encryption system
+encryption module
+exploit
+exploit system
+exploit module
+firewall
+firewall system
+firewall module
+hacker
+hacker system
+hacker module
+hash
+hash system
+hash module
+keylogger
+keylogger system
+keylogger module
+malware
+malware system
+malware module
+phishing
+phishing system
+phishing module
+public key
+public key system
+public key module
+ransomware
+ransomware system
+ransomware module
+sandbox
+sandbox system
+sandbox module
+spyware
+spyware system
+spyware module
+threat
+threat system
+threat module
+trojan
+trojan system
+trojan module
+virus
+virus system
+virus module
+vulnerability
+vulnerability system
+vulnerability module
+zero day
+zero day system
+zero day module
+
+========== SOFTWARE ENGINEERING ==========
+agile
+agile system
+agile module
+architecture
+architecture system
+architecture module
+code review
+code review system
+code review module
+continuous integration
+continuous integration system
+continuous integration module
+deployment
+deployment system
+deployment module
+design pattern
+design pattern system
+design pattern module
+documentation
+documentation system
+documentation module
+Git
+Git system
+Git module
+maintenance
+maintenance system
+maintenance module
+microservice
+microservice system
+microservice module
+pipeline
+pipeline system
+pipeline module
+quality assurance
+quality assurance system
+quality assurance module
+refactor
+refactor system
+refactor module
+repository
+repository system
+repository module
+requirement
+requirement system
+requirement module
+scrum
+scrum system
+scrum module
+software lifecycle
+software lifecycle system
+software lifecycle module
+source code
+source code system
+source code module
+sprint
+sprint system
+sprint module
+testing
+testing system
+testing module
+unit test
+unit test system
+unit test module
+version control
+version control system
+version control module
+waterfall
+waterfall system
+waterfall module
+
+========== MOBILE DEVELOPMENT ==========
+activity
+activity system
+activity module
+Android
+Android system
+Android module
+APK
+APK system
+APK module
+emulator
+emulator system
+emulator module
+fragment
+fragment system
+fragment module
+Gradle
+Gradle system
+Gradle module
+iOS
+iOS system
+iOS module
+Java
+Java system
+Java module
+Jetpack
+Jetpack system
+Jetpack module
+Kotlin
+Kotlin system
+Kotlin module
+layout
+layout system
+layout module
+manifest
+manifest system
+manifest module
+mobile app
+mobile app system
+mobile app module
+notification
+notification system
+notification module
+resource
+resource system
+resource module
+SDK
+SDK system
+SDK module
+simulator
+simulator system
+simulator module
+SQLite
+SQLite system
+SQLite module
+widget
+widget system
+widget module
+XML
+XML system
+XML module
+
+========== GAME DEVELOPMENT ==========
+animation
+animation system
+animation module
+asset
+asset system
+asset module
+collision
+collision system
+collision module
+frame rate
+frame rate system
+frame rate module
+game engine
+game engine system
+game engine module
+hitbox
+hitbox system
+hitbox module
+HUD
+HUD system
+HUD module
+input
+input system
+input module
+level design
+level design system
+level design module
+multiplayer
+multiplayer system
+multiplayer module
+physics
+physics system
+physics module
+pixel
+pixel system
+pixel module
+rendering
+rendering system
+rendering module
+scene
+scene system
+scene module
+shader
+shader system
+shader module
+sprite
+sprite system
+sprite module
+texture
+texture system
+texture module
+tilemap
+tilemap system
+tilemap module
+Unity
+Unity system
+Unity module
+Unreal Engine
+Unreal Engine system
+Unreal Engine module
+
+========== CLOUD COMPUTING ==========
+autoscaling
+autoscaling system
+autoscaling module
+cloud computing
+cloud computing system
+cloud computing module
+container
+container system
+container module
+deployment
+deployment system
+deployment module
+Docker
+Docker system
+Docker module
+instance
+instance system
+instance module
+Kubernetes
+Kubernetes system
+Kubernetes module
+load balancer
+load balancer system
+load balancer module
+microservice
+microservice system
+microservice module
+serverless
+serverless system
+serverless module
+storage
+storage system
+storage module
+virtual machine
+virtual machine system
+virtual machine module
+AWS
+AWS system
+AWS module
+Azure
+Azure system
+Azure module
+Google Cloud
+Google Cloud system
+Google Cloud module
+
+========== COMPUTER HARDWARE ==========
+ALU
+ALU system
+ALU module
+battery
+battery system
+battery module
+BIOS
+BIOS system
+BIOS module
+circuit
+circuit system
+circuit module
+cooling
+cooling system
+cooling module
+CPU
+CPU system
+CPU module
+GPU
+GPU system
+GPU module
+hard disk
+hard disk system
+hard disk module
+hardware
+hardware system
+hardware module
+keyboard
+keyboard system
+keyboard module
+monitor
+monitor system
+monitor module
+motherboard
+motherboard system
+motherboard module
+mouse
+mouse system
+mouse module
+power supply
+power supply system
+power supply module
+processor
+processor system
+processor module
+RAM
+RAM system
+RAM module
+ROM
+ROM system
+ROM module
+scanner
+scanner system
+scanner module
+SSD
+SSD system
+SSD module
+touchscreen
+touchscreen system
+touchscreen module
+USB
+USB system
+USB module

@@ -18,8 +18,8 @@ public class UIManager {
 
     public TextView tvLetters, tvResult, tvTimer, tvScore, tvLatestScore, tvHighScore, tvLoadStatus, tvDescTitle, tvDescBody;
     public EditText etInput;
-    public Button btnCheck, btnStart, btnRelax, btnSurvival, btnBackToHome, btnClose, btnConfirmStart, btnCancelDesc, btnLanguage;
-    public LinearLayout homeContainer, descContainer;
+    public Button btnCheck, btnBackToHome, btnRestart, btnClose, btnConfirmStart, btnCancelDesc, btnLanguage, btnComputerTerms, btnPractice, btnBackFromCategory;
+    public LinearLayout homeContainer, descContainer, categoryContainer, categoryList;
     public ScrollView gameContainer;
 
     public UIManager(Activity activity) {
@@ -31,6 +31,8 @@ public class UIManager {
         homeContainer = activity.findViewById(R.id.homeContainer);
         descContainer = activity.findViewById(R.id.descContainer);
         gameContainer = activity.findViewById(R.id.gameContainer);
+        categoryContainer = activity.findViewById(R.id.categoryContainer);
+        categoryList = activity.findViewById(R.id.categoryList);
 
         tvLetters = activity.findViewById(R.id.tvLetters);
         tvResult = activity.findViewById(R.id.tvResult);
@@ -44,49 +46,68 @@ public class UIManager {
 
         etInput = activity.findViewById(R.id.etInput);
         btnCheck = activity.findViewById(R.id.btnCheck);
-        btnStart = activity.findViewById(R.id.btnStart);
-        btnRelax = activity.findViewById(R.id.btnRelax);
-        btnSurvival = activity.findViewById(R.id.btnSurvival);
         btnBackToHome = activity.findViewById(R.id.btnBackToHome);
+        btnRestart = activity.findViewById(R.id.btnRestart);
         btnClose = activity.findViewById(R.id.btnClose);
         btnConfirmStart = activity.findViewById(R.id.btnConfirmStart);
         btnCancelDesc = activity.findViewById(R.id.btnCancelDesc);
         btnLanguage = activity.findViewById(R.id.btnLanguage);
+        btnComputerTerms = activity.findViewById(R.id.btnComputerTerms);
+        btnPractice = activity.findViewById(R.id.btnPractice);
+        btnBackFromCategory = activity.findViewById(R.id.btnBackFromCategory);
     }
 
     public void showHomeScreen(int latestScore, int highScore) {
         homeContainer.setVisibility(View.VISIBLE);
         descContainer.setVisibility(View.GONE);
         gameContainer.setVisibility(View.GONE);
+        categoryContainer.setVisibility(View.GONE);
         tvLatestScore.setText(activity.getString(R.string.latest_score, latestScore));
         tvHighScore.setText(activity.getString(R.string.high_score, highScore));
         hideKeyboard();
     }
 
-    public void showDescription(GameMode mode) {
+    public void showCategorySelection() {
+        homeContainer.setVisibility(View.GONE);
+        categoryContainer.setVisibility(View.VISIBLE);
+        descContainer.setVisibility(View.GONE);
+        gameContainer.setVisibility(View.GONE);
+    }
+
+    public void showDescription(GameMode mode, String categoryName) {
         homeContainer.setVisibility(View.GONE);
         descContainer.setVisibility(View.VISIBLE);
         gameContainer.setVisibility(View.GONE);
+        categoryContainer.setVisibility(View.GONE);
 
-        switch (mode) {
-            case CLASSIC:
-                tvDescTitle.setText(R.string.desc_classic_title);
-                tvDescBody.setText(R.string.desc_classic_body);
-                break;
-            case RELAX:
-                tvDescTitle.setText(R.string.desc_relax_title);
-                tvDescBody.setText(R.string.desc_relax_body);
-                break;
-            case SURVIVAL:
-                tvDescTitle.setText(R.string.desc_survival_title);
-                tvDescBody.setText(R.string.desc_survival_body);
-                break;
+        if (categoryName != null) {
+            tvDescTitle.setText(categoryName);
+            int bodyRes = (mode == GameMode.RELAX) ? R.string.desc_relax_body : R.string.desc_category_body;
+            String body = activity.getString(bodyRes, categoryName);
+            tvDescBody.setText(body);
+        } else {
+            // โหมดปกติ (ถ้ามี)
+            switch (mode) {
+                case CLASSIC:
+                    tvDescTitle.setText(R.string.desc_classic_title);
+                    tvDescBody.setText(R.string.desc_classic_body);
+                    break;
+                case RELAX:
+                    tvDescTitle.setText(R.string.desc_relax_title);
+                    tvDescBody.setText(R.string.desc_relax_body);
+                    break;
+                case SURVIVAL:
+                    tvDescTitle.setText(R.string.desc_survival_title);
+                    tvDescBody.setText(R.string.desc_survival_body);
+                    break;
+            }
         }
     }
 
     public void showGameScreen() {
         homeContainer.setVisibility(View.GONE);
         descContainer.setVisibility(View.GONE);
+        categoryContainer.setVisibility(View.GONE);
         gameContainer.setVisibility(View.VISIBLE);
         btnBackToHome.setVisibility(View.GONE);
         etInput.requestFocus();
